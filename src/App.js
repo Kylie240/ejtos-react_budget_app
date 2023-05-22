@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import ExpenseList from "./components/ExpenseList";
 import AllocationForm from "./components/AllocationForm";
 import Budget from "./components/Budget";
-import Currency from "./components/Currency";
+import Location from "./components/Location";
+import Remaining from "./components/Remaining";
 
 
 import { AppProvider } from './context/AppContext';
@@ -21,14 +22,12 @@ const App = () => {
                         <Budget />
                     </div>
                     <div className='col-sm'>
-                        <Budget />
+                        <Remaining />
                     </div>
                     <div className='col-sm'>
-                        <Budget />
+                        <Location />
                     </div>
-                    <div className='col-sm'>
-                        <Currency />
-                    </div>
+                    
                 </div>    
 
                 <h3 className='mt-3'>Shopping Cart</h3>
